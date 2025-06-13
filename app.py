@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the model
-with open('/Users/abhishekkanade/Documents/Data Structures/DAA_Assignment/DAA_DEMO/DevTown/boston_housing_model.pkl', 'rb') as f:
+with open('boston_housing_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 @app.route('/')
